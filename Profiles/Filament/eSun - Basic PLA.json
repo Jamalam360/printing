@@ -1,0 +1,22 @@
+{
+    "filament_max_volumetric_speed": [
+        "14.275"
+    ],
+    "filament_settings_id": [
+        "eSun - Basic PLA"
+    ],
+    "from": "User",
+    "hot_plate_temp_initial_layer": [
+        "65"
+    ],
+    "inherits": "Generic PLA @System",
+    "is_custom_defined": "0",
+    "name": "eSun - Basic PLA",
+    "nozzle_temperature": [
+        "210"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "210"
+    ],
+    "version": "2.3.1.10"
+}
