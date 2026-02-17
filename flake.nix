@@ -21,6 +21,8 @@
             buildInputs = [
               # Platform IO requires Python
               (python3.withPackages (pyPkgs: []))
+              # Used to upload firmware
+              avrdude
             ];
           };
         }

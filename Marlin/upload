@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+	ls /dev/ttyUSB* /dev/ttyACM*
+	echo "Specify connection port"
+	exit 1
+fi
+
+firmware="./.Marlin/.pio/build/mega2560/firmware.hex"
+
+if [ ! -f "$firmware" ]; then 
+	echo "Firmware not found at path $firmware"
+	exit 1
+fi
+
+echo "Flashing..."
+avrdude -p atmega2560 -c wiring -P "$1" -b 115200 -D -U "flash:w:$firmware:i" || { echo "Flash failed"; exit 1; }
+echo "Flash complete"

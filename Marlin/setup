@@ -24,10 +24,10 @@ fi
 git clone --branch "$marlin_version" --depth 1 "git@github.com:MarlinFirmware/Marlin.git" "./.Marlin" || { echo "Failed to clone MarlinFirmware/Marlin at $marlin_version"; exit 1; }
 echo "Cloned MarlinFirmware/Marlin at $marlin_version"
 
-cp -srf ./Configuration.h ./.Marlin/Marlin/Configuration.h
-cp -srf ./Configuration_adv.h ./.Marlin/Marlin/Configuration_adv.h
-cp -srf ./_Bootscreen.h ./.Marlin/Marlin/_Bootscreen.h
-cp -srf ./_Statusscreen.h ./.Marlin/Marlin/_Statusscreen.h
+ln -srf ./Configuration.h ./.Marlin/Marlin/Configuration.h
+ln -srf ./Configuration_adv.h ./.Marlin/Marlin/Configuration_adv.h
+ln -srf ./_Bootscreen.h ./.Marlin/Marlin/_Bootscreen.h
+ln -srf ./_Statusscreen.h ./.Marlin/Marlin/_Statusscreen.h
 
 echo "Symlinked configuration files into Marlin $marlin_version"
 code "./.Marlin"
