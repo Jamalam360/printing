@@ -2066,7 +2066,7 @@
  *
  * Warning: Does not respect endstops!
  */
-#if ENABLED(CR10V2_BLTOUCH)
+#if ANY(CR10V2_BLTOUCH, CR10V2_MESH_BED_LEVELING)
   #define BABYSTEPPING
 #endif
 #if ENABLED(BABYSTEPPING)
