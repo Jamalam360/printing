@@ -24,3 +24,12 @@ A new `CR10V2_MESH_BED_LEVELING` option is added. When enabled, the following se
 - `RESTORE_LEVELING_AFTER_G28` is enabled.
 - `LCD_BED_LEVELING` is enabled.
 - `BABYSTEPPING` (_adv_) is enabled.
+
+### SD Card Sorting
+
+- `SDCARD_RATHERRECENTFIRST` (_adv_) is enabled to sort SD entries by most recently modified first.
+
+### LCD Sound
+
+- `SOUND_MENU_ITEM` (_adv_) is enabled.
+- `SOUND_ON_DEFAULT` (_adv_) is disabled.
